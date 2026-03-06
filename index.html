@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Mengal Web Studio Portfolio</title>
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+    <div class="nav-left">PORTFOLIO</div>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-right">
+        <div class="hamburger" id="hamburger">☰</div>
+    </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="hero">
+    <div class="logo-hero">
+        <img src="/image/logo1c.jpg" alt="Logo">
+    </div>
+    <h1>Mengal Web Studio</h1>
+    <p>Full Stack Web Developer | Responsive Websites</p>
+    <button>Explore My Work</button>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="about" id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a passionate Full Stack Web Developer skilled in HTML, CSS, JavaScript,
+        PHP, and MySQL. I create modern, responsive, and user-friendly websites
+        for businesses and clients.
+    </p>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section class="skills" id="skills">
+    <h2>My Skills</h2>
+    <div class="skill-list">
+        <div class="skill-item">HTML</div>
+        <div class="skill-item">CSS</div>
+        <div class="skill-item">JavaScript</div>
+        <div class="skill-item">PHP</div>
+        <div class="skill-item">MySQL</div>
+        <div class="skill-item">Responsive Design</div>
+        <div class="skill-item">Git & GitHub</div>
+    </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section class="projects" id="projects">
+    <h2>My Projects</h2>
+
+    <div class="project-gallery">
+        <a href="https://mjanmangal95-max.github.io/mangal-mobile-shop/" target="_blank" class="project-item">
+            <img src="/image/mengal mobile shop.png" alt="Project 1">
+        </a>
+        <a href="https://mjanmangal95-max.github.io/super-balochistan-restaurant/" target="_blank" class="project-item">
+            <img src="/image/supper balochistan restaurant.png" alt="Project 2">
+        </a>
+        <a href=" https://mjanmangal95-max.github.io/I-R-Designer/" target="_blank" class="project-item">
+            <img src="/image/I R designer.png" alt="Project 3">
+        </a>
+        <a href="YOUR_PROJECT_LINK4" target="_blank" class="project-item">
+            <img src="YOUR_SCREENSHOT4.png" alt="Project 4">
+        </a>
+        
+    </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="contact" id="contact">
+    <h2>Contact Me</h2>
+
+    <div class="social-icons">
+        <a href="https://wa.me/923343552613" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+        </a>
+
+        <a href="https://www.facebook.com/profile.php?id=61559948415761&mibextid=ZbWKwL" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+        </a>
+
+        <a href="mailto:mengalwebstudio@gmail.com" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+        </a>
+
+        <a href="https://github.com/dashboard" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub">
+        </a>
+    </div>
+
+    <form action="insert.php" method="POST" onsubmit="return validateForm()">
+        <input type="text" name="name" id="name" placeholder="Your Name">
+        <input type="email" name="email" id="email" placeholder="Your Email">
+        <textarea name="text" id="text" placeholder="Your Message" rows="5" ></textarea>
+        <button type="submit" value="submit">Send Message</button>
+    </form>
+</section>
+
+<footer class="footer">
+    © 2026 M.J Developer
+</footer>
+
+<script>
+const hamburger=document.getElementById('hamburger');
+const navLinks=document.getElementById('navLinks');
+
+hamburger.addEventListener('click',function(){
+    navLinks.classList.toggle('show');
+});
+
+function validateForm() {
+    // values lena
+    let name = document.getElementById("name").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let message = document.getElementById("text").value.trim();
+
+    // Name check
+    if (name === "") {
+        alert("Please enter your name");
+        return false;
+    }
+
+    // Email check
+    if (email === "") {
+        alert("Please enter your email");
+        return false;
+    }
+
+    // Email format check
+    let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    if (!email.match(emailPattern)) {
+        alert("Please enter valid email");
+        return false;
+    }
+
+    // Message check
+    if (message === "") {
+        alert("Please enter your message");
+        return false;
+    }
+
+    // agar sab theek ho
+    alert("Form submitted successfully!");
+    return true;
+}
+</script>
+
+</body>
+</html>
