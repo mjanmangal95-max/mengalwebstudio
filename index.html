@@ -1,127 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mengal Web Studio | Full Stack Developer</title>
 <link rel="stylesheet" href="style.css">
-<title>Mengal Web Studio Portfolio</title>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
-<nav class="navbar">
-    <div class="nav-left">PORTFOLIO</div>
+<header>
 
-    <ul class="nav-links" id="navLinks">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+<div class="logo">MENGAL WEB STUDIO</div>
 
-    <div class="nav-right">
-        <div class="hamburger" id="hamburger">☰</div>
-    </div>
+<nav id="nav">
+
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+
 </nav>
 
-<!-- ================= HERO ================= -->
-<section class="hero" id="hero">
-    <div class="logo-hero">
-        <img src="./image/logo1c.jpg" alt="Logo">
-    </div>
-    <h1>Mengal Web Studio</h1>
-    <p>Full Stack Web Developer | Responsive Websites</p>
-    <button>Explore My Work</button>
+<div class="menu" onclick="toggleMenu()">
+<i class="fas fa-bars"></i>
+</div>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<img src="./image/logo1c.jpg" alt="mengal web Studio logo">
+
+<h1>MENGAL WEB STUDIO</h1>
+
+<p>Full Stack Web Developer & Designer</p>
+
+<p>I build modern responsive websites for businesses and startups.</p>
+
+<a href="#projects" class="btn">View My Work</a>
+
 </section>
 
-<!-- ================= ABOUT ================= -->
-<section class="about" id="about">
-    <h2>About Me</h2>
-    <p>
-        I am a passionate Full Stack Web Developer skilled in HTML, CSS, JavaScript,
-        PHP, and MySQL. I create modern, responsive, and user-friendly websites
-        for businesses and clients.
-    </p>
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p class="para">
+Hi I'm <strong>Mengal Web Studio</strong>, a professional 
+<strong>Full Stack Developer & Web Designer</strong>. 
+We create <strong>modern, responsive, and user-friendly websites</strong> 
+that help businesses grow online.
+
+With expertise in <strong>HTML, CSS, JavaScript, PHP, MySQL</strong> 
+and <strong>Responsive Design</strong>, we deliver projects that are 
+functional, visually appealing, and client-focused.
+
+Committed to <strong>quality, timely delivery, and client satisfaction</strong>, 
+Mengal Web Studio turns ideas into real-world web solutions that make an impact.
+</p>
+
+<a href="#projects" class="btn">View My Work</a>
+
 </section>
 
-<!-- ================= SKILLS ================= -->
-<section class="skills" id="skills">
-    <h2>My Skills</h2>
-    <div class="skill-list">
-        <div class="skill-item">HTML</div>
-        <div class="skill-item">CSS</div>
-        <div class="skill-item">JavaScript</div>
-        <div class="skill-item">PHP</div>
-        <div class="skill-item">MySQL</div>
-        <div class="skill-item">Responsive Design</div>
-        <div class="skill-item">Git & GitHub</div>
-    </div>
+<!-- SKILLS -->
+
+<section id="skills">
+
+<h2>My Skills</h2>
+
+<div class="skills">
+
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">PHP</div>
+<div class="skill">MySQL</div>
+<div class="skill">Responsive Design</div>
+<div class="skill">Git & GitHub</div>
+
+</div>
+
 </section>
 
-<!-- ================= PROJECTS ================= -->
-<section class="projects" id="projects">
-    <h2>My Projects</h2>
+<!-- PROJECTS -->
 
-    <div class="project-gallery">
-        <a href="https://mjanmangal95-max.github.io/mangal-mobile-shop/" target="_blank" class="project-item">
-            <img src="./image/mengal mobile shop.png" alt="Project 1">
-        </a>
-        <a href="https://mjanmangal95-max.github.io/super-balochistan-restaurant/" target="_blank" class="project-item">
-            <img src="./image/supper balochistan restaurant.png" alt="Project 2">
-        </a>
-        <a href=" https://mjanmangal95-max.github.io/I-R-Designer/" target="_blank" class="project-item">
-            <img src="./image/I R designer.png" alt="Project 3">
-        </a>
-        <a href="YOUR_PROJECT_LINK4" target="_blank" class="project-item">
-            <img src="YOUR_SCREENSHOT4.png" alt="Project 4">
-        </a>
-        
-    </div>
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+
+<img src="./image/mengal mobile shop.png" alt="mengal mobile shop">
+
+<div class="project-content">
+
+<h3>Shop Website</h3>
+
+<p>Modern responsive mobile shop website.</p>
+
+<a href=" https://mjanmangal95-max.github.io/mangal-mobile-shop/">View Website</a>
+
+</div>
+
+</div>
+
+<div class="project">
+
+<img src="./image/I R designer.png" alt="I R designer Portfolio">
+
+<div class="project-content">
+
+<h3>Portfolio Website</h3>
+
+<p>Professional Portfolio website.</p>
+
+<a href=" https://mjanmangal95-max.github.io/I-R-Designer/">View Website</a>
+
+</div>
+
+</div>
+
+<div class="project">
+
+<img src="./image/supper balochistan restaurant.png" alt="supper balochistan restaurant website">
+
+<div class="project-content">
+
+<h3>Restaurant Website</h3>
+
+<p>Professional Responsive Restaurant Website.</p>
+
+<a href="#">View Website</a>
+
+</div>
+
+</div>
+
+<div class="project">
+
+<img src="./image/mengal mobile shop.png" alt="mobile shop">
+
+<div class="project-content">
+
+<h3>Ecommerce Website</h3>
+
+<p>Online store website layout.</p>
+
+<a href="#">View Website</a>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
 
-<!-- ================= CONTACT ================= -->
-<section class="contact" id="contact">
-    <h2>Contact Me</h2>
+<!-- CONTACT -->
 
-    <div class="social-icons">
-        <a href="https://wa.me/923343552613" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-        </a>
+<section id="contact">
 
-        <a href="https://www.facebook.com/profile.php?id=61559948415761&mibextid=ZbWKwL" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
-        </a>
+<h2>Contact Me</h2>
 
-        <a href="mailto:mengalwebstudio@gmail.com" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
-        </a>
+<div class="icons">
 
-        <a href="https://github.com/dashboard" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub">
-        </a>
-    </div>
+<a href="https://www.facebook.com/profile.php?id=61559948415761&mibextid=ZbWKwL" class="facebook">
+<i class="fab fa-facebook"></i>
+</a>
 
-    <form action="insert.php" method="POST" onsubmit="return validateForm()">
-        <input type="text" name="name" id="name" placeholder="Your Name">
-        <input type="email" name="email" id="email" placeholder="Your Email">
-        <textarea name="text" id="text" placeholder="Your Message" rows="5" ></textarea>
-        <button type="submit" value="submit">Send Message</button>
-    </form>
+<a href="https://wa.me/923343552613" class="whatsapp">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+<a href="https://github.com/mjanmangal95-max" class="github">
+<i class="fab fa-github"></i>
+</a>
+
+<a href="mailto:mengalwebstudio@gmail.com" class="email">
+<i class="fas fa-envelope"></i>
+</a>
+ 
+</div>
+
+<form action="insert.php" method="POST" onsubmit="return validateForm()">
+
+<input type="text"  name="name" id="name" placeholder="Your Name">
+
+<input type="email" name="email" id="email" placeholder="Your Email">
+
+<textarea rows="5" name="text" id="text" placeholder="Your Message"></textarea>
+
+<br>
+
+<button type="submit">Send Message</button>
+
+</form>
+
 </section>
 
-<footer class="footer">
-    © 2026 M.J Developer
+<footer>
+
+<p>© 2026 Mengal Web Studio | Full Stack Developer</p>
+
 </footer>
 
 <script>
-const hamburger=document.getElementById('hamburger');
-const navLinks=document.getElementById('navLinks');
 
-hamburger.addEventListener('click',function(){
-    navLinks.classList.toggle('show');
-});
+function toggleMenu(){
+document.getElementById("nav").classList.toggle("active");
+}
 
 function validateForm() {
     // values lena
@@ -158,10 +259,8 @@ function validateForm() {
     alert("Form submitted successfully!");
     return true;
 }
+
 </script>
 
 </body>
-
 </html>
-
-
