@@ -232,37 +232,34 @@ color:white;
 }
 
 /* MOBILE */
-/* MOBILE FIX FOR HAMBURGER */
-.menu {
-    z-index: 2000; /* Icon nav ke upar dikhe */
-}
-
+/* MOBILE FIX FOR HAMBURGER ICON */
 @media(max-width:768px){
+    .menu {
+        display: block;        /* Show hamburger on mobile */
+        position: absolute;    /* Position properly */
+        top: 20px;             /* Adjust top */
+        right: 20px;           /* Adjust right */
+        font-size: 30px;       /* Thoda bada icon */
+        cursor: pointer;
+        color: white;          /* Ensure visible on dark background */
+        z-index: 2000;         /* Above nav */
+    }
+
     nav {
-        z-index: 1500; /* Mobile menu properly overlay kare */
+        display: none;         /* Hide nav by default */
+        flex-direction: column;
+        background: darkblue;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 200px;
+        padding: 20px;
+        z-index: 1500;
+    }
+
+    nav.active {
+        display: flex;         /* Show nav when toggled */
     }
 }
 
-@media(max-width:768px){
-
-nav{
-display:none;
-flex-direction:column;
-background:darkblue;
-position:absolute;
-top:70px;
-right:0;
-width:200px;
-padding:20px;
-}
-
-nav.active{
-display:flex;
-}
-
-.menu{
-display:block;
-}
-
-}
 
