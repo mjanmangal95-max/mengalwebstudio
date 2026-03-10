@@ -48,7 +48,7 @@ nav a:hover{
 .menu{
 display:none;
 font-size:25px;
-cursor:pointer;
+cursor:pointer
 }
 
 /* HERO */
@@ -232,6 +232,16 @@ color:white;
 }
 
 /* MOBILE */
+/* MOBILE FIX FOR HAMBURGER */
+.menu {
+    z-index: 2000; /* Icon nav ke upar dikhe */
+}
+
+@media(max-width:768px){
+    nav {
+        z-index: 1500; /* Mobile menu properly overlay kare */
+    }
+}
 
 @media(max-width:768px){
 
@@ -255,3 +265,4 @@ display:block;
 }
 
 }
+
